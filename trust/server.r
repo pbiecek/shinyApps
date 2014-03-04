@@ -1,6 +1,5 @@
 library(likert)
 library(shiny)
-library(PIAAC)
 library(Hmisc)
 library(MASS)
 
@@ -30,6 +29,7 @@ shinyServer(function(input, output) {
     cnt <- input$country
 #    print("currentSetOfRows")
 #    print(cnt)
+    load(paste0(cnt, ".rda"))
     dat <- get(cnt)
     dat$ISCO12 <- substr(as.character(dat$ISCO08_C),1,1) %in% c("1", "2")
     dat$EDCAT4 <- factor(sapply(strsplit(as.character(dat$EDCAT6),split="[^A-Za-z][^A-Za-z]"), '[', 1) == "Tertiary", labels=c("b. Tertiary", "Tertiary"))

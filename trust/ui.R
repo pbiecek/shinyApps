@@ -1,8 +1,6 @@
 library(shiny)
-library(PIAAC)
 
-tmp <- ls("package:PIAAC", all = TRUE)
-lis <- tmp[nchar(tmp) == 3]
+lis <- c("aut",  "bel",  "can",  "cze",  "deu",  "dnk",  "esp",  "est",  "fin",  "fra",  "gbr",  "irl",  "ita",  "jpn",  "kor",  "nld",  "nor",  "pol",  "rus",  "svk",  "swe",  "usa")
 
 shinyUI(pageWithSidebar(
   headerPanel("PIAAC single variable"),

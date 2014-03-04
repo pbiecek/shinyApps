@@ -1,0 +1,24 @@
+
+
+*{
+    font-family: Optima!important; 
+}
+
+.shiny-download-link {
+  width:230px!important;
+}
+
+.shiny-plot-output {
+  width:800px!important;
+}
+
+.jslider {
+  width:230px!important;
+}
+
+.well {
+  width:250px!important;
+}
+.span4 {
+  width:250px!important;
+}

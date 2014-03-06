@@ -1,11 +1,17 @@
 library(shiny)
 
-lis <- c("aut",  "bel",  "can",  "cze",  "deu",  "dnk",  "esp",  "est",  "fin",  "fra",  "gbr",  "irl",  "ita",  "jpn",  "kor",  "nld",  "nor",  "pol",  "rus",  "svk",  "swe",  "usa")
+lis <- c("aut",  "bel",   "cze", "dnk",  "esp",  "est",  "fin",  "fra",   "irl",  "ita",  "jpn",  "kor",  "nld",  "nor",  "pol",  "rus",  "svk",  "swe",  "usa")
 
 shinyUI(pageWithSidebar(
   headerPanel("PIAAC single variable"),
   
   sidebarPanel(
+      tags$script("(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-5650686-6', 'icm.edu.pl');
+  ga('send', 'pageview');"),
     tags$head(
       tags$link(rel="stylesheet", type="text/css", href="mojcss.css")
     ),
